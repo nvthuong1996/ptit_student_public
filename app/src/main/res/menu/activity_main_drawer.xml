@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:icon="@drawable/money" android:id="@id/nav_HocPhi" android:title="@string/hoc_phi" />
+        <item android:icon="@drawable/cry" android:id="@id/nav_MonNo" android:title="@string/mon_no" />
+        <item android:icon="@drawable/lichhoc" android:id="@id/nav_LichHoc" android:title="@string/lich_hoc" />
+        <item android:icon="@drawable/lichhoc" android:id="@id/nav_LichThi" android:title="@string/lich_thi" />
+        <item android:icon="@drawable/bangdiem" android:id="@id/nav_BangDiem" android:title="@string/bang_diem" />
+        <item android:icon="@drawable/muctieu" android:id="@id/nav_DuKienHoc" android:title="@string/du_kien_hoc" />
+    </group>
+    <item android:title="Nothing Is Impossible">
+        <menu>
+            <item android:icon="@drawable/power" android:id="@id/nav_DangXuat" android:title="@string/dang_xuat" />
+        </menu>
+    </item>
+
+</menu>

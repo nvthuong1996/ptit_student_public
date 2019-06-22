@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:orientation="vertical"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintHorizontal_bias="1.0"
+        ads:layout_constraintLeft_toLeftOf="parent"
+        ads:layout_constraintRight_toRightOf="parent"
+        ads:layout_constraintTop_toTopOf="parent"
+        ads:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="150.0dip"
+            android:background="@drawable/biaapptkb"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="3.0dip"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip">
+
+            <ImageView
+                android:id="@+id/imgAdd_tangtuan"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                ads:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/add" />
+
+            <ImageView
+                android:id="@+id/imgAdd_gtuan"
+                android:layout_width="39dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/negative" />
+
+
+            <TextView
+                android:id="@id/txtDay_LichHoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginTop="8.0dip"
+                android:layout_marginRight="8.0dip"
+                android:layout_marginBottom="8.0dip"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="18.0sp"
+                ads:layout_constraintBottom_toBottomOf="parent"
+                ads:layout_constraintLeft_toLeftOf="parent"
+                ads:layout_constraintRight_toRightOf="parent"
+                ads:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@id/linearLayout9"
+            android:layout_width="fill_parent"
+            android:layout_height="3.0dip"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal"
+            ads:layout_constraintLeft_toLeftOf="parent"
+            ads:layout_constraintRight_toRightOf="parent"
+            ads:layout_constraintTop_toBottomOf="@id/linearLayout8" />
+
+        <ListView
+            android:id="@id/lvLichHoc_LichHoc"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginRight="8.0dip"
+            ads:layout_constraintHorizontal_bias="0.0"
+            ads:layout_constraintLeft_toLeftOf="parent"
+            ads:layout_constraintRight_toRightOf="parent"
+            ads:layout_constraintTop_toBottomOf="@id/linearLayout9" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ScrollView
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@id/constraintLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+
+                <ImageView
+                    android:id="@id/imgNhanXetMucTieu"
+                    android:layout_width="150.0dip"
+                    android:layout_height="130.0dip"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/muctieucuathimlagi"
+                    app:layout_constraintLeft_toRightOf="@id/radG_MucTieu"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtNhanXetMucTieu" />
+
+                <TextView
+                    android:id="@id/txtNhanXetMucTieu"
+                    android:layout_width="180.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_horizontal"
+                    android:text="Mục tiêu của bạn là gì ?"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:textSize="16.0sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.87"
+                    app:layout_constraintStart_toEndOf="@+id/edtSoTinChiCanHoc"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@id/edtSoTinChiCanHoc"
+                    android:layout_width="83dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:hint="Tổng số tín chỉ"
+                    android:inputType="number"
+                    android:text="160"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+                <RadioGroup
+                    android:id="@id/radG_MucTieu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edtSoTinChiCanHoc">
+
+                    <RadioButton
+                        android:id="@id/radXuatSac"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="Xuất sắc" />
+
+                    <RadioButton
+                        android:id="@id/radGioi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="Giỏi" />
+
+                    <RadioButton
+                        android:id="@id/radKha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="Khá" />
+
+                    <RadioButton
+                        android:id="@id/radTrungBinh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="Trung bình" />
+
+                    <RadioButton
+                        android:id="@id/radYeuTruong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="I Love PTIT forever" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="19dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="CPA dự kiến :"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/radG_MucTieu" />
+
+
+                <EditText
+                    android:id="@id/editdukiencpa"
+                    android:layout_width="81dp"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:text="2.5"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="19dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Tổng số tín chỉ :"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/cpatuychinh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="Tính"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/editdukiencpa"
+                    app:layout_constraintStart_toEndOf="@+id/editdukiencpa" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="fill_parent"
+                android:layout_height="68.0dip">
+
+                <LinearLayout
+                    android:id="@id/linearLayout15"
+                    android:layout_width="0.0dip"
+                    android:layout_height="3.0dip"
+                    android:layout_marginTop="60.0dip"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/linearLayout14" />
+
+                <TextView
+                    android:id="@id/txtCPA_DuKien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="10.0dip"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="40.0sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@id/linearLayout14"
+                    android:layout_width="0.0dip"
+                    android:layout_height="3.0dip"
+                    android:background="@color/colorPrimaryDark"
+                    android:orientation="horizontal"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="(cpa/tín)"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.1"
+                    app:layout_constraintStart_toEndOf="@+id/txtCPA_DuKien"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="( cpa/tín )" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Dự kiến TOEIC:  "
+                    android:textColor="@color/design_default_color_primary_dark"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@id/dukientoeic"
+                    android:layout_width="149dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:hint="Tổng số tín chỉ"
+                    android:inputType="number"
+                    android:text="450"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+                <Button
+                    android:id="@+id/button_tinhdoitoeic"
+                    android:layout_width="121dp"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="Tính lại CPA"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/resetcpa_btn"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dukientoeic"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <LinearLayout
+                    android:id="@id/linearLayout20"
+                    android:layout_width="0.0dip"
+                    android:layout_height="3.0dip"
+                    android:background="@color/colorPrimaryDark"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button_tinhdoitoeic" />
+
+                <Button
+                    android:id="@+id/resetcpa_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Reset CPA"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/button_tinhdoitoeic"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/button_tinhdoitoeic" />
+
+            </android.support.constraint.ConstraintLayout>
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note: Bạn phải chú ý cập nhập ứng dụng. Các bản cập nhập thường có những thay đổi quan trọng có thể là fix lỗi hoặc sửa cách tính điểm. Cách tính điểm ứng dụng chỉ mang tính chất tham khảo. Dữ liệu điểm các môn học của bạn lấy từ qldt nên khi có điều gì bất thường bạn nên vào qldt kiểm tra lại"
+                tools:layout_editor_absoluteX="35dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="20dp"
+                tools:layout_editor_absoluteY="571dp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
